@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мотор-Сервис — автосервис (демо)</title>
+<meta name="description" content="Демо-сайт автосервиса: услуги, цены, запись.">
+<style>
+:root{--bg:#14161a;--card:#1f2228;--text:#f1f2f4;--muted:#9aa0aa;--accent:#ff7a1a;--line:#2d3139}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text)}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+.demo{background:var(--accent);color:#111;text-align:center;padding:8px 12px;font-size:14px;font-weight:600}
+.demo a{color:#111}
+header{padding:56px 0 40px}
+.logo{font-weight:800;letter-spacing:.05em;color:var(--accent);margin-bottom:20px}
+h1{font-size:clamp(30px,6vw,48px);line-height:1.15;margin:0 0 14px}
+h2{font-size:26px;margin:0 0 20px}
+.muted{color:var(--muted)}
+.btn{display:inline-block;padding:14px 24px;border-radius:12px;background:var(--accent);color:#111;text-decoration:none;font-weight:700}
+section{padding:36px 0}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:18px}
+.price{color:var(--accent);font-weight:700}
+.why{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.why li::before{content:"✓ ";color:var(--accent);font-weight:700}
+table{width:100%;border-collapse:collapse}
+td{padding:12px 0;border-bottom:1px solid var(--line)}
+td:last-child{text-align:right;color:var(--accent);font-weight:700;white-space:nowrap}
+footer{padding:32px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="demo">Демо-сайт: выдуманный автосервис. <a href="../">← к портфолио</a></div>
+<div class="wrap">
+<header>
+  <div class="logo">МОТОР-СЕРВИС</div>
+  <h1>Ремонт авто без сюрпризов в цене</h1>
+  <p class="muted">Диагностика, ТО и ремонт легковых авто. Называем цену до начала работ и даём гарантию на каждую услугу.</p>
+  <p><a class="btn" href="#contacts">Записаться</a></p>
+</header>
+
+<section>
+  <h2>Почему к нам</h2>
+  <ul class="why">
+    <li>Цена фиксируется до ремонта</li>
+    <li>Гарантия 6 месяцев на работы</li>
+    <li>Показываем старые детали после замены</li>
+    <li>Запись на удобное время, без очередей</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Услуги и цены</h2>
+  <div class="card">
+    <table>
+      <tr><td>Компьютерная диагностика</td><td>от 1 000 ₽</td></tr>
+      <tr><td>Замена масла и фильтра</td><td>от 800 ₽</td></tr>
+      <tr><td>Замена колодок (ось)</td><td>от 1 500 ₽</td></tr>
+      <tr><td>Шиномонтаж (4 колеса)</td><td>от 2 000 ₽</td></tr>
+      <tr><td>Ремонт подвески</td><td>от 2 500 ₽</td></tr>
+    </table>
+  </div>
+  <p class="muted" style="font-size:14px">Цены в демо условные.</p>
+</section>
+
+<section>
+  <h2>Как это работает</h2>
+  <div class="grid">
+    <div class="card"><h3>1. Звоните или пишете</h3><p class="muted">Описываете проблему, выбираем время.</p></div>
+    <div class="card"><h3>2. Диагностика</h3><p class="muted">Находим причину и называем итоговую цену.</p></div>
+    <div class="card"><h3>3. Ремонт</h3><p class="muted">Делаем после вашего согласия и отдаём машину в срок.</p></div>
+  </div>
+</section>
+
+<section id="contacts">
+  <h2>Контакты</h2>
+  <div class="card">
+    <p><strong>Адрес:</strong> г. Пример, ул. Заводская, 12</p>
+    <p><strong>Время:</strong> ежедневно 9:00–20:00</p>
+    <p><strong>Телефон:</strong> +7 000 000-00-00 (демо)</p>
+  </div>
+</section>
+</div>
+<footer><div class="wrap">Демо-сайт сделал Станислав. Хотите такой же для своего бизнеса? <a href="https://t.me/randy_di" style="color:var(--accent)">Telegram</a></div></footer>
+</body>
+</html>

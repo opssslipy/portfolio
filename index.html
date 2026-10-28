@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сайты, боты и игры под ключ</title>
+<meta name="description" content="Делаю лендинги, сайты-визитки, Telegram-боты и мини-игры для малого бизнеса. Быстро, по фиксированной цене.">
+<style>
+:root{--bg:#fafaf7;--card:#fff;--text:#1d1d1f;--muted:#6b6b72;--accent:#2f5bea;--line:#e5e5e0}
+@media (prefers-color-scheme:dark){:root{--bg:#151518;--card:#1e1e23;--text:#f2f2f4;--muted:#a0a0aa;--accent:#7b9bff;--line:#2e2e35}}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+h1{font-size:clamp(30px,6vw,48px);line-height:1.15;margin:0 0 16px}
+h2{font-size:28px;margin:0 0 24px}
+p{margin:0 0 12px}
+.muted{color:var(--muted)}
+.btn{display:inline-block;padding:14px 24px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column}
+.card h3{margin:0 0 8px;font-size:20px}
+.tag{font-size:13px;color:var(--accent);font-weight:600;margin-bottom:8px}
+.price{font-size:22px;font-weight:700;margin:8px 0}
+.card a.more{margin-top:auto;padding-top:12px;color:var(--accent);font-weight:600;text-decoration:none}
+.card a.more:hover{text-decoration:underline}
+ol.steps{padding-left:0;list-style:none;counter-reset:s;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+ol.steps li::before{content:counter(s);display:block;font-size:30px;font-weight:700;color:var(--accent)}
+footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:14px}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<section>
+  <p class="tag">Станислав · веб-разработчик</p>
+  <h1>Сайты, Telegram-боты и игры для вашего дела</h1>
+  <p class="muted">Лендинги, сайты-визитки, боты для записи клиентов и мини-игры. Фиксированная цена, понятные сроки, первый вариант за 2–3 дня.</p>
+  <div class="btns">
+    <a class="btn" href="https://t.me/randy_di">Написать в Telegram</a>
+    <a class="btn ghost" href="#works">Смотреть примеры</a>
+  </div>
+</section>
+
+<section id="works">
+  <h2>Примеры работ</h2>
+  <p class="muted">Демо-сайты на выдуманные бизнесы: показывают, как может выглядеть ваш сайт.</p>
+  <div class="grid">
+    <article class="card">
+      <div class="tag">Демо · автосервис</div>
+      <h3>Мотор-Сервис</h3>
+      <p class="muted">Тёмный строгий стиль, таблица цен, гарантии и блок записи.</p>
+      <a class="more" href="demo-auto/">Открыть демо →</a>
+    </article>
+    <article class="card">
+      <div class="tag">Демо · студия красоты</div>
+      <h3>Студия «Лилия»</h3>
+      <p class="muted">Мягкие цвета, карточки услуг, акция для новых клиентов.</p>
+      <a class="more" href="demo-beauty/">Открыть демо →</a>
+    </article>
+  </div>
+</section>
+
+<section>
+  <h2>Что делаю и сколько стоит</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>Лендинг / визитка</h3>
+      <div class="price">от 5 000 ₽</div>
+      <p class="muted">Один экран или несколько блоков, под телефон, с кнопками связи. Размещение бесплатно.</p>
+    </article>
+    <article class="card">
+      <h3>Telegram-бот</h3>
+      <div class="price">от 10 000 ₽</div>
+      <p class="muted">Запись клиентов, ответы на частые вопросы, приём заявок, рассылки.</p>
+    </article>
+    <article class="card">
+      <h3>Мини-игра / квиз</h3>
+      <div class="price">от 7 000 ₽</div>
+      <p class="muted">Игра для праздника, подарка или рекламной акции. Открывается по ссылке.</p>
+    </article>
+  </div>
+</section>
+
+<section>
+  <h2>Как работаем</h2>
+  <ol class="steps">
+    <li><strong>Обсуждаем.</strong><br><span class="muted">Что нужно, для кого, сколько и когда.</span></li>
+    <li><strong>Показываю черновик.</strong><br><span class="muted">Через 2–3 дня. Правки входят в цену.</span></li>
+    <li><strong>Дорабатываем.</strong><br><span class="muted">Тексты, фото, контакты, детали.</span></li>
+    <li><strong>Публикуем.</strong><br><span class="muted">Сайт в сети, вы получаете все файлы.</span></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Связаться</h2>
+  <p class="muted">Напишите, что нужно, и я отвечу с ценой и сроком.</p>
+  <div class="btns">
+    <a class="btn" href="https://t.me/randy_di">Telegram</a>
+    <a class="btn ghost" href="tel:+79299480388">+7 929 948-03-88</a>
+  </div>
+</section>
+
+</main>
+<footer><div class="wrap">© Станислав, 2026</div></footer>
+</body>
+</html>

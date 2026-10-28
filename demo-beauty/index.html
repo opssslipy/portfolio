@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Лилия — студия красоты (демо)</title>
+<meta name="description" content="Демо-сайт студии красоты: услуги, цены, запись.">
+<style>
+:root{--bg:#fdf6f4;--card:#fff;--text:#3a2a2e;--muted:#8a7479;--accent:#c4577a;--soft:#f6e1e7;--line:#eddcdf}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.6 Georgia,"Times New Roman",serif;background:var(--bg);color:var(--text)}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+.demo{background:#3a2a2e;color:#fff;text-align:center;padding:8px 12px;font:600 14px system-ui,sans-serif}
+.demo a{color:#fff}
+header{padding:64px 0 44px;text-align:center}
+.logo{font-size:15px;letter-spacing:.3em;color:var(--accent);margin-bottom:18px}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.15;margin:0 0 14px;font-weight:400}
+h2{font-size:28px;margin:0 0 20px;font-weight:400;text-align:center}
+.muted{color:var(--muted)}
+.btn{display:inline-block;padding:14px 28px;border-radius:30px;background:var(--accent);color:#fff;text-decoration:none;font:600 16px system-ui,sans-serif}
+section{padding:36px 0}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card h3{margin:0 0 4px;font-size:20px;font-weight:400}
+.price{color:var(--accent);font:700 17px system-ui,sans-serif}
+.soft{background:var(--soft);border-radius:18px;padding:24px;text-align:center}
+footer{padding:32px 0;color:var(--muted);font:14px system-ui,sans-serif;border-top:1px solid var(--line);text-align:center}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="demo">Демо-сайт: выдуманная студия красоты. <a href="../">← к портфолио</a></div>
+<div class="wrap">
+<header>
+  <div class="logo">СТУДИЯ «ЛИЛИЯ»</div>
+  <h1>Красота, в которой вам уютно</h1>
+  <p class="muted">Маникюр, стрижки и уход за кожей в тихой студии в центре города. Запись на удобное время.</p>
+  <p><a class="btn" href="#contacts">Записаться</a></p>
+</header>
+
+<section>
+  <h2>Услуги</h2>
+  <div class="grid">
+    <div class="card"><h3>Маникюр</h3><p class="muted">Классический или аппаратный, с покрытием.</p><span class="price">от 1 800 ₽</span></div>
+    <div class="card"><h3>Стрижка и укладка</h3><p class="muted">Подбор формы под тип лица и волос.</p><span class="price">от 2 000 ₽</span></div>
+    <div class="card"><h3>Окрашивание</h3><p class="muted">Однотонное, мелирование, сложные техники.</p><span class="price">от 4 500 ₽</span></div>
+    <div class="card"><h3>Уход за лицом</h3><p class="muted">Чистка, пилинг, увлажняющие процедуры.</p><span class="price">от 3 000 ₽</span></div>
+  </div>
+  <p class="muted" style="font-size:14px;text-align:center">Цены в демо условные.</p>
+</section>
+
+<section>
+  <div class="soft">
+    <h2>Первое посещение</h2>
+    <p>Скидка 10% на любую услугу при первой записи. Назовите промокод «ЛИЛИЯ».</p>
+  </div>
+</section>
+
+<section id="contacts">
+  <h2>Как записаться</h2>
+  <div class="card">
+    <p><strong>Адрес:</strong> г. Пример, ул. Цветочная, 5</p>
+    <p><strong>Время:</strong> ежедневно 10:00–21:00</p>
+    <p><strong>Телефон:</strong> +7 000 000-00-00 (демо)</p>
+  </div>
+</section>
+</div>
+<footer>Демо-сайт сделал Станислав. Хотите такой же для своего дела? <a href="https://t.me/randy_di" style="color:var(--accent)">Telegram</a></footer>
+</body>
+</html>
